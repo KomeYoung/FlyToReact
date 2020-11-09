@@ -171,7 +171,15 @@ class Arrays extends React.Component {
 function ss(name) {
     console.log(name + '---');
     askNet().then(r => 111);
+// 虚拟DOM
+    let vDOM = React.createElement("h2",{id:"title"},"Hello World")
 
+// 真实的DOM
+    let h3 = document.createElement("h3")
+
+// 打印虚拟DOM和真实的DOM对比就理解轻重的概念
+    console.log(vDOM);
+    console.dir(h3);
 }
 
 class InputHolder extends React.Component {
@@ -187,6 +195,7 @@ class InputHolder extends React.Component {
                    onChange={event => {
                        this.setState({email: event.target.value})
                        ss(event.target.value);
+
                    }}/>
         </div>
     }
@@ -319,7 +328,7 @@ class Test2 extends React.Component {
     };
 }
 
-export default Square;
+export default InputHolder;
 
 // ReactDOM.render(
 //     <Test2 name={'这是默认的初始传值！！！'}/>,

@@ -10,7 +10,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                {this.state.date.toLocaleTimeString()}
+               11111
             </div>
         )
     }
