@@ -4,7 +4,7 @@ body {
 }
 
 ol, ul {
-    padding-left: 30px;
+    padding-left: 130px;
 }
 
 .board-row:after {
@@ -13,6 +13,10 @@ ol, ul {
     display: table;
 }
 
+.text-color {
+    color: red;
+    font-size: 44px;
+}
 .status {
     margin-bottom: 10px;
 }

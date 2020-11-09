@@ -16,25 +16,4 @@ class App extends React.Component {
     }
 }
 
-class App2 extends React.Component{
-    // constructor(props) {
-    //     super(props);
-    // }
-
-    render() {
-        return(
-            <button onClick={this.state.handleClick2}>
-                {/*{this.state.}*/}
-            </button>
-        );
-    }
-
-
-
-    handleClick2() {
-        this.setState()
-    }
-
-
-}
 export default App;

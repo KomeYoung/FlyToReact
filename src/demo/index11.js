@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import '../index.css';
 
 class Square extends React.Component {
     render() {
@@ -319,7 +319,9 @@ class Test2 extends React.Component {
     };
 }
 
-ReactDOM.render(
-    <Test2 name={'这是默认的初始传值！！！'}/>,
-    document.getElementById('root')
-);
+export default Square;
+
+// ReactDOM.render(
+//     <Test2 name={'这是默认的初始传值！！！'}/>,
+//     document.getElementById('root')
+// );
