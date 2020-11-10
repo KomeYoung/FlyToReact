@@ -4,6 +4,7 @@ import {HashRouter, Route, Switch, Redirect, NavLink} from 'react-router-dom'
 import Page1 from './demo/index1';
 import Page2 from './demo/index2';
 import Page3 from './demo/index3';
+import RouterJs from './router/RouterJs';
 import RouterConfig from "./router/RouterConfig";
 
 class App extends React.Component {
@@ -45,4 +46,4 @@ class App extends React.Component {
     }
 }
 
-ReactDOM.render(<App/>, document.getElementById('root'))
+ReactDOM.render(<RouterConfig/>, document.getElementById('root'))

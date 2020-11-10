@@ -172,7 +172,7 @@ function ss(name) {
     console.log(name + '---');
     askNet().then(r => 111);
 // 虚拟DOM
-    let vDOM = React.createElement("h2",{id:"title"},"Hello World")
+    let vDOM = React.createElement("h2", {id: "title"}, "Hello World")
 
 // 真实的DOM
     let h3 = document.createElement("h3")
@@ -185,19 +185,28 @@ function ss(name) {
 class InputHolder extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {email: ''};
+        let params = this.props.match.params;
+        console.log(params.type + "----"+params.id);
+        this.state = {email: params.type};
     }
 
 
     render() {
-        return <div>
-            <input placeholder={'holder'} value={this.state.email}
-                   onChange={event => {
-                       this.setState({email: event.target.value})
-                       ss(event.target.value);
+        console.log(this);
+        return (
+            <div>
+                首页--{this.props.match.params.type}--{this.props.match.params.id}
+            </div>
+        );
 
-                   }}/>
-        </div>
+        // return <div>
+        //     <input placeholder={'holder'} value={this.state.email}
+        //            onChange={event => {
+        //                this.setState({email: event.target.value})
+        //                ss(event.target.value);
+        //
+        //            }}/>
+        // </div>
     }
 }
 
