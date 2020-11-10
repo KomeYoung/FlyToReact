@@ -13,9 +13,9 @@ class RouterConfig extends React.Component {
             <Router history={history}>
                 <div>
                     <div>
-                        <NavLink to='/home/top/10'>page1</NavLink>
-                        <NavLink to='/city'>page2</NavLink>
-                        <NavLink to='/index'>page3</NavLink>
+                        <Link to='/home/top/10'>page1</Link>
+                        <Link to='/city'>page2</Link>
+                        <Link to='/index'>page3</Link>
                     </div>
                     <Switch>
                         {/*<Route path='/' exact render={() => (*/}
