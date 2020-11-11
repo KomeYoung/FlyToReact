@@ -25,6 +25,7 @@ class RouterConfig extends React.Component {
                         <Route exact path="/" component={Page3} />
                         <Route path='/city' component={Page2}/>
                         <Route path='/index' component={Page3}/>
+                        <Redirect to = '/index'/>
                     </Switch>
                 </div>
             </Router>
