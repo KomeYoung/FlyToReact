@@ -16,6 +16,7 @@ class RouterConfig extends React.Component {
                         <NavLink to='/home/top/10'>page1</NavLink>
                         <NavLink to='/city'>page2</NavLink>
                         <NavLink to='/index'>page3</NavLink>
+                        <NavLink to='/index12222'>page3</NavLink>
                     </div>
                     <Switch>
                         {/*<Route path='/' exact render={() => (*/}
@@ -25,6 +26,7 @@ class RouterConfig extends React.Component {
                         <Route exact path="/" component={Page3} />
                         <Route path='/city' component={Page2}/>
                         <Route path='/index' component={Page3}/>
+                        <Redirect to = '/index'/>
                     </Switch>
                 </div>
             </Router>
